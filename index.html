@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elog Logistics – Quản lý vận tải container</title>
+  <meta name="description" content="Elog Logistics – Ứng dụng quản lý đơn hàng, xe và lái xe cho đơn vị vận tải container tại Hải Phòng." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a1a; background: #fff; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #012D5A 0%, #0a4a8a 100%); color: #fff; padding: 64px 24px; text-align: center; }
+    .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 16px; }
+    .hero p { font-size: 18px; opacity: 0.88; max-width: 520px; margin: 0 auto 32px; line-height: 1.6; }
+    .badge-store { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; padding: 10px 20px; font-size: 14px; font-weight: 600; color: #fff; text-decoration: none; }
+    .badge-store:hover { background: rgba(255,255,255,0.25); }
+
+    /* Features */
+    .features { max-width: 900px; margin: 60px auto; padding: 0 24px; }
+    .features h2 { font-size: 26px; font-weight: 700; text-align: center; margin-bottom: 40px; color: #012D5A; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .card { background: #f4f7fb; border-radius: 14px; padding: 28px 24px; }
+    .icon { font-size: 32px; margin-bottom: 14px; }
+    .card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #012D5A; }
+    .card p { font-size: 14px; line-height: 1.65; color: #555; }
+
+    /* About */
+    .about { background: #f9f9f9; padding: 60px 24px; text-align: center; }
+    .about h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: #012D5A; }
+    .about p { font-size: 15px; line-height: 1.75; color: #444; max-width: 600px; margin: 0 auto; }
+
+    footer { text-align: center; padding: 32px 24px; font-size: 13px; color: #999; border-top: 1px solid #eee; }
+    footer a { color: #012D5A; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>Elog Logistics</h1>
+  <p>Giải pháp quản lý vận tải container toàn diện — đơn hàng, xe, lái xe — trong một ứng dụng.</p>
+  <!-- TODO: thay href bằng App Store link thực tế khi có -->
+  <a class="badge-store" href="#">Tải trên App Store</a>
+</section>
+
+<section class="features">
+  <h2>Tính năng nổi bật</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="icon">📦</div>
+      <h3>Quản lý đơn hàng</h3>
+      <p>Theo dõi toàn bộ vòng đời đơn hàng từ khi tiếp nhận đến khi giao hàng hoàn tất. Cập nhật trạng thái theo thời gian thực.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📍</div>
+      <h3>Tracking hành trình</h3>
+      <p>Xem lộ trình và tiến độ vận chuyển của từng chuyến hàng. Minh bạch thông tin cho cả đơn vị và khách hàng.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚛</div>
+      <h3>Quản lý xe container</h3>
+      <p>Theo dõi tình trạng, lịch sử hoạt động và phân công xe cho từng chuyến hàng một cách hiệu quả.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👤</div>
+      <h3>Quản lý lái xe</h3>
+      <p>Hồ sơ lái xe, phân công chuyến, theo dõi giờ công và hiệu suất vận hành của từng tài xế.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Lương & Phụ phí</h3>
+      <p>Tự động tính toán lương, phụ phí đường bộ, phụ phí phát sinh và các khoản khấu trừ theo từng chuyến.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📷</div>
+      <h3>Hồ sơ ảnh minh chứng</h3>
+      <p>Chụp ảnh và lưu trữ ảnh minh chứng ngay trên thiết bị. Hỗ trợ quét mã QR trong quá trình vận hành tại cảng.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+  <h2>Về Elog Logistics</h2>
+  <p>
+    Elog Logistics được xây dựng dành riêng cho các đơn vị vận tải xe container tại khu vực Hải Phòng.
+    Ứng dụng giúp tối ưu hóa quy trình điều phối, giảm thiểu giấy tờ thủ công và tăng tính minh bạch
+    trong toàn bộ chuỗi vận chuyển.
+  </p>
+</section>
+
+<footer>
+  <p>
+    © 2025 Elog Logistics &nbsp;·&nbsp;
+    <a href="support.html">Hỗ trợ</a> &nbsp;·&nbsp;
+    <!-- TODO: thêm link Privacy Policy nếu có -->
+    <a href="#">Chính sách bảo mật</a>
+  </p>
+</footer>
+
+</body>
+</html>
